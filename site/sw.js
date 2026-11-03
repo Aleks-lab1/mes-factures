@@ -1,6 +1,6 @@
 // Mes Factures service worker — offline app shell
-const VERSION = "mf-46cfc60d95e3";
-const PRECACHE = ["./","assets/app-OQGYTFB3.js","assets/chunk-GAGQALTU.js","assets/chunk-OKFFMK4R.js","icons/apple-touch-icon.png","icons/favicon-32.png","icons/icon-192.png","icons/icon-512.png","icons/icon.svg","icons/maskable-512.png","index.html","manifest.webmanifest","vendor/pdf.min.mjs","vendor/pdf.worker.min.mjs"];
+const VERSION = "mf-6320b4ca768b";
+const PRECACHE = ["./","assets/app-CUXBHDMZ.js","assets/chunk-KMR64WJZ.js","assets/chunk-WAUFM2DP.js","icons/apple-touch-icon.png","icons/favicon-32.png","icons/icon-192.png","icons/icon-512.png","icons/icon.svg","icons/maskable-512.png","index.html","manifest.webmanifest","vendor/pdf.min.mjs","vendor/pdf.worker.min.mjs"];
 const FONT_CACHE = "mf-fonts";
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(VERSION).then((c) => c.addAll(PRECACHE.map((u) => new Request(u, { cache: "reload" })))).then(() => self.skipWaiting()));
