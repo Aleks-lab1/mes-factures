@@ -1,0 +1,9 @@
+{
+  "name": "mes-factures-site",
+  "private": true,
+  "type": "module",
+  "description": "Mes Factures : facturation suisse avec QR-facture, site + synchronisation (Netlify Functions + Blobs)",
+  "dependencies": {
+    "@netlify/blobs": "^11.1.1"
+  }
+}

@@ -1,0 +1,7 @@
+Mes Factures bundles the following open-source software:
+- swissqrbill (MIT) - Roger Schönbächler - QR-bill data, validation, translations and layout reference
+- QR Code generator library (MIT) - Project Nayuki
+- pdf-lib (MIT) - Andrew Dillon
+- pdf.js (Apache-2.0) - Mozilla
+- React (MIT) - Meta Platforms
+- Lucide icons via react-icons (ISC / MIT)

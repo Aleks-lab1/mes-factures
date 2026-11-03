@@ -1,0 +1,21 @@
+# Mes Factures : site déjà construit (dossier site/) + fonction de synchronisation (/api/*)
+[build]
+  publish = "site"
+  command = "echo 'Site deja construit'"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "no-cache"
